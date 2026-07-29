@@ -11,7 +11,7 @@
 
         body {
             background-color: transparent;
-            color: #d4af37;
+            color: #e6dfd5;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -38,7 +38,7 @@
         .main-stat {
             font-size: 38px;
             font-weight: bold;
-            color: #d4af37;
+            color: #e6dfd5;
             margin-bottom: 10px;
             letter-spacing: 1px;
         }
@@ -74,7 +74,8 @@
             document.getElementById('icon-goal').innerText = randomIcon;
         }
 
-        updateDynamicIcon();
+        // Changes icons fast every 800 milliseconds
+        setInterval(updateDynamicIcon, 800);
     </script>
 </body>
 </html>
