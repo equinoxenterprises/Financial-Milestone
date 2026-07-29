@@ -11,7 +11,7 @@
 
         body {
             background-color: transparent;
-            color: #fffaed;
+            color: #dcd0c0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,14 +20,13 @@
         }
 
         .card {
-            background-color: #1a1512;
-            border: 1px solid #3d2f24;
+            background-color: #221a15;
             border-radius: 16px;
             padding: 28px;
             width: 100%;
             max-width: 420px;
             text-align: center;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
         }
 
         .icon {
@@ -38,14 +37,14 @@
         .main-stat {
             font-size: 38px;
             font-weight: bold;
-            color: #fffaed;
+            color: #dcd0c0;
             margin-bottom: 10px;
             letter-spacing: 1px;
         }
 
         .subtext {
             font-size: 13px;
-            color: #d1c7bd;
+            color: #a89f91;
             line-height: 1.4;
             margin: 0;
         }
@@ -67,15 +66,15 @@
     </div>
 
     <script>
-        const icons = ['🎯', '🚀', '⭐', '🔥', '💎', '⚡', '🏆', '📈'];
+        const icons = ['🎯', '🚀', '⭐', '🔥', '💎', '⚡', '🏆', '📈', '💰', '🌟'];
         
         function updateDynamicIcon() {
             const randomIcon = icons[Math.floor(Math.random() * icons.length)];
             document.getElementById('icon-goal').innerText = randomIcon;
         }
 
-        // Shuffles icons super fast every 400 milliseconds
-        setInterval(updateDynamicIcon, 400);
+        // Shuffles icons very fast every 250 milliseconds
+        setInterval(updateDynamicIcon, 250);
     </script>
 </body>
 </html>
