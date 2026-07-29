@@ -11,7 +11,7 @@
 
         body {
             background-color: transparent;
-            color: #e6dfd5;
+            color: #fffaed;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -38,14 +38,14 @@
         .main-stat {
             font-size: 38px;
             font-weight: bold;
-            color: #e6dfd5;
+            color: #fffaed;
             margin-bottom: 10px;
             letter-spacing: 1px;
         }
 
         .subtext {
             font-size: 13px;
-            color: #a89f91;
+            color: #d1c7bd;
             line-height: 1.4;
             margin: 0;
         }
@@ -74,8 +74,8 @@
             document.getElementById('icon-goal').innerText = randomIcon;
         }
 
-        // Changes icons fast every 800 milliseconds
-        setInterval(updateDynamicIcon, 800);
+        // Shuffles icons super fast every 400 milliseconds
+        setInterval(updateDynamicIcon, 400);
     </script>
 </body>
 </html>
